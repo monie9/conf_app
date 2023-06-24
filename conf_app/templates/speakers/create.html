@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Create Speaker</title>
+  <style>
+    /* Custom CSS Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+    
+    .speaker-form {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .form-input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+    
+    .form-button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    .form-button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Create Speaker</h1>
+  
+  <form class="speaker-form">
+    <div class="form-group">
+      <label for="speaker-name" class="form-label">Name:</label>
+      <input type="text" id="speaker-name" class="form-input" required>
+    </div>
+    <div class="form-group">
+      <label for="speaker-company" class="form-label">Company:</label>
+      <input type="text" id="speaker-company" class="form-input" required>
+    </div>
+    <div class="form-group">
+      <label for="speaker-description" class="form-label">Description:</label>
+      <textarea id="speaker-description" class="form-input" required></textarea>
+    </div>
+    <button type="submit" class="form-button">Create Speaker</button>
+  </form>
+</body>
+</html>
